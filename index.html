@@ -2,38 +2,92 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Continuous Deployment</title>
-  <style>
-    body {
-      color: #000;
-      background-color: #ccc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
 </head>
 <body>
-  <div align="center">
+  <img id="enilogo" src="./img/eniecole.png" alt="logo eni">
+  <div id="title" align="center">
     <h1>Veille technologique - ENI Ecole</h1>
-	<h2>Le 08 janvier 2018</h2>
-    <h2>Ce site web sert de démonstration à la création d'un pipeline de Continuous Deployment.</h2>
-	<h2>Ce pipeline se déclenche après un commit sur GitHub, et déploie le site sur une instance Amazon EC2.</h2>
-	<h2>Les services Amazon utilisés sont via AWS CodeDeploy et AWS CodePipeline</h2>
-	
-	<p>Modifiez le code source à <a href="https://github.com/baptistefoucher/aws-codepipeline-s3-aws-codedeploy_linux/blob/master/index.html">cette adresse</a>.</p>
-	<p>Modifiez ce paragraphe</p>
+    <h4>Présenté par Baptiste Foucher - Le 08 janvier 2018</h4>
+  </div>
+
+  <div id="contdeploy">
+    <p>CONTINUOUS</p>
+    <p>DEPLOYMENT</p>
+    <img src="./img/continuous-deployment.png">
+  </div>
+
+  <div align="center">
+    <h2>Cette page web sert de démonstration à la création d'un pipeline de Continuous Deployment.<br>
+  	Ce pipeline se déclenche après un commit sur GitHub, et déploie le site sur une instance Amazon EC2.<br>
+  	Les services Amazon utilisés sont via AWS CodeDeploy et AWS CodePipeline.</h2>
+  </div>
+
+  <hr>
+
+  <div id="twocols">
+    <div id="problematique">
+      <h3>Problématique</h3>
+      <ul>
+        <li><span>Faire tester les modifications rapidement par le client ou les utilisateurs</span></li>
+        <li><span>Proposer la nouvelle version rapidement aux utilisateurs</span></li>
+        <li><span>Avoir la possibilité de revenir sur une ancienne version facilement</span></li>
+        <li><span>Être capable de surveiller mon application</span></li>
+      </ul>
+    </div>
+
+    <div id="gains">
+      <h3>Gains</h3>
+      <ul>
+        <li><span>Cycles de mise en production accélérés</span></li>
+        <li><span>Réponse rapide aux sollicitations du client</span></li>
+        <li><span>Retours rapides du client sur les nouvelles fonctionnalités</span></li>
+        <li><span>Favorise la couverture du code par des tests</span></span></li>
+        <li><span>Limite les risques et le stress dus à une mise en production</span></li>
+        <li><span>Le code est testé plus efficacement, plus souvent, et les bugs sont remontés plus tôt</span></li>
+        <li><span>Améliore la qualité de l’application</span></li>
+        <li><span>Réduction des coûts, membres concentrés sur leurs tâches et automatisation des processus</span></li>
+        <li><span>Collaboration développeurs et opérationnels accrue</span></li>
+        <li><span>Permet une surveillance efficace de l’application</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div align="center" id="exemples" class="row">
+    <h3>Quelques exemples de sociétés utilisant une forme de déploiement automatisée</h3>
+    <div id="canvas">
+      <img id="facebook" src="./img/logo-facebook.png">
+      <img id="netflix" src="./img/logo-netflix.png">
+      <img id="amazon" src="./img/logo-amazon.png">
+      <img id="adobe" src="./img/logo-adobe.png">
+      <img id="tesla" src="./img/logo-tesla.png">
+    </div>
+  </div>
+
+  <hr>
+
+	<div id="gitbutton" >
+    <a href="https://github.com/baptistefoucher/aws-codepipeline-s3-aws-codedeploy_linux/blob/master/index.html">MODIFIER LE CODE SOURCE</a>
+  </div>
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Heure</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Baptiste</td>
+          <td>13:30</td>
+          <td>Début de la présentation - Veille technologique</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
