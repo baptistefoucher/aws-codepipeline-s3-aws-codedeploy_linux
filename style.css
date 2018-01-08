@@ -158,7 +158,7 @@ li:nth-child(even) {
     appearance: button;
 
     text-decoration: none;
-    background-color: transparent;
+    background-color: #0B0C10;
     border: 3px solid #092c63;
     border-radius: 2px;
     color: #e5e5e5;
